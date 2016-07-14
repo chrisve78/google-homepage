@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>Google</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="icon" type="image/png" href="http://www.google.com/favicon.ico">
   </head>
 
   <body>
 
-    <div class="navbar">
-      <ul>
-        <li>Gmail</li>
-        <li>Images</li>
-        <li>Sign in</li>
+    <div class="container">
+      <ul class="navbar">
+        <li><a href="#">Gmail</a></li>
+        <li><a href="#">Images</a></li>
+        <li><a href="#"><img id="apps" src="images/grid.png"></a></li>
+        <li><div id="signin"><a id="signintext" href="#">Sign in</a></div></li>
       </ul>
     </div>
 
@@ -19,5 +22,29 @@
       <img src="images/googlelogo.png">
     </div>
 
+    <div class="searchbox">
+      <form>
+        <input id="searchbox" type="text" name="search">
+      </form>
+    </div>
+
+    <div id="searchbutton">
+      <form action="#" method="get">
+        <input class="searchbutton" type="submit" value="Google Search">
+        <input class="searchbutton" type="submit" value="I'm Feeling Lucky">
+      </form>
+    </div>
+    <div class="footer">
+      <ul class="leftfoot">
+        <li><a href="#">Advertising</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <ul class="rightfoot">
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </div>
   </body>
 </html>
